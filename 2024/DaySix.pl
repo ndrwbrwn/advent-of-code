@@ -1,6 +1,5 @@
 use Clone qw/ clone /;
-my @grid;
-my @pci, @pcj;
+my (@grid, @pc);
 my ($starti, $startj);
 
 SETUP: {
@@ -44,7 +43,7 @@ PART_TWO: {
 		my $sq = $grid[@{$o}[0]][@{$o}[1]];
 		$grid[@{$o}[0]][@{$o}[1]] = "#";
 
-		my @turns = ();
+		my (@turns, @v);
 		($i, $j, $d) = ($starti, $startj, 0);
 
 		while (@v = movedir($i, $j, $d)) {
