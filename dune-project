@@ -5,22 +5,22 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github andrewj-brown/advent-of-code-2022))
 
-(authors "Author Name")
+(authors "Andrew Brown")
 
-(maintainers "Maintainer Name")
+(maintainers "Andrew Brown")
 
-(license LICENSE)
+(license MIT)
 
-(documentation https://url/to/documentation)
+(documentation n/a)
 
 (package
  (name aoc)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "advent of code solutions for 2022.")
+ (description "pretty self explanatory.")
  (depends ocaml dune)
  (tags
-  (topics "to describe" your project)))
+  ("aoc" "advent of code" "advent")))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
