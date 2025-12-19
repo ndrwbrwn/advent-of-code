@@ -1,4 +1,3 @@
-use Clone qw/ clone /;
 my (@grid, @pc);
 my ($starti, $startj);
 
